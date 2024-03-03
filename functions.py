@@ -140,7 +140,7 @@ def calc_mol_flow(mass_flow = 400, molar_mass = 44.0095):
     mol_flow = mass_flow*1000*1000/molar_mass/24/3600
     return mol_flow # mol/s
 
-def Hr_out(Hin, Hs, isen_eff=0.85):
+def Hreal_out(Hin, Hs, isen_eff=0.85):
     """
     Calculates the enthalpy of the outlet stream of the turbine.
     Args:
@@ -150,8 +150,8 @@ def Hr_out(Hin, Hs, isen_eff=0.85):
     Returns:
         float: Enthalpy of the outlet stream in kJ/mol.
     """
-    Hr_out = (Hs- Hin + isen_eff(Hin))/isen_eff
-    return Hr_out # kJ/mol
+    Hreal_out = (Hs- Hin + isen_eff*(Hin))/isen_eff
+    return Hreal_out # kJ/mol
 
 def calc_work(Hin, Hout, mol_flow):
     """
