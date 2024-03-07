@@ -2,7 +2,7 @@
 
 Author: Tiffany Yau
 
-This repository contains the code and data for the CO2 Compression, Transportation, and Storage Assignment for ENCH 327. The code is written in Python and the data is stored in the `data` folder. Data was obtained from the NIST Chemistry WebBook [1].
+This repository contains the code, data, and responses for the CO2 Compression, Transportation, and Storage Assignment for ENCH 327. The code is written in Python and the data is stored in the `data` folder. Data was obtained from the NIST Chemistry WebBook [1].
 
 All calculations are performed in the Jupyter Notebook `calculations.ipynb`. Functions used to perform said calculations are in `functions.py` All questions are answered in the Jupyter Notebook `questions.ipynb`.
 
